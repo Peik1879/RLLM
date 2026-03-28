@@ -1,57 +1,57 @@
 # Symbolic Consistency Checker for Moral Judgments
 
-Ein transparentes, regelbasiertes System zur Überprüfung der logischen Konsistenz und Priorisierung moralischer Urteile mit erklärbarer Entscheidungsfindung.
+A transparent, rule-based system for checking the logical consistency and prioritization of moral judgments with explainable decision-making.
 
 ## Features
-- **Regelbasiertes Backend:** Alle moralischen Regeln und Fakten werden in ASP (Clingo) modelliert.
-- **Kontext- und Prioritätensystem:** Konflikte werden durch ethisch gewichtete Prioritäten gelöst.
-- **Erklärbarkeit:** Jede Entscheidung ist nachvollziehbar und wird mit Begründung ausgegeben.
-- **Statistik:** Auswertung, welche Werte am häufigsten Konflikte entscheiden ("moralische Sieger").
-- **Tkinter-GUI:** Einfache Bedienung, Anzeige von Konflikten, Erklärungen und Statistiken.
-- **Modular:** Leicht erweiterbar um neue Regeln, Kontexte und Szenarien.
+- **Rule-based backend:** All moral rules and facts are modeled in ASP (Clingo).
+- **Context and priority system:** Conflicts are resolved using ethically weighted priorities.
+- **Explainability:** Every decision is traceable and comes with an explanation.
+- **Statistics:** Analysis of which values most frequently decide conflicts ("moral winners").
+- **Tkinter GUI:** Easy-to-use interface, displays conflicts, explanations, and statistics.
+- **Modular:** Easily extendable with new rules, contexts, and scenarios.
 
-## Projektstruktur
-- `facts.lp` — Szenarien, Urteile, Kontexte und Prioritäten (ASP-Fakten)
-- `rules.lp` — Logik und Regeln für Konsistenz, Prioritäten, Erklärungen (ASP)
-- `main.py` — Kommandozeilen-Tool für Konsistenzprüfung und Statistik
-- `gui.py` — Tkinter-GUI für interaktive Nutzung
-- `clingo_runner.py` — Schnittstelle zwischen Python und Clingo
-- `parser.py` — Auswertung und Aufbereitung der Clingo-Ausgabe
+## Project Structure
+- `facts.lp` — Scenarios, judgments, contexts, and priorities (ASP facts)
+- `rules.lp` — Logic and rules for consistency, priorities, explanations (ASP)
+- `main.py` — Command-line tool for consistency checking and statistics
+- `gui.py` — Tkinter GUI for interactive use
+- `clingo_runner.py` — Interface between Python and Clingo
+- `parser.py` — Processing and formatting of Clingo output
 
-## Voraussetzungen
+## Requirements
 - Python 3.8+
 - Clingo (https://potassco.org/clingo/)
-- Tkinter (in Standard-Python enthalten)
+- Tkinter (included in standard Python)
 
 ## Installation
-1. Clingo installieren (siehe https://potassco.org/clingo/)
-2. Projektdateien in ein Verzeichnis kopieren
-3. Optional: Virtuelle Python-Umgebung anlegen
+1. Install Clingo (see https://potassco.org/clingo/)
+2. Copy project files into a directory
+3. Optionally: Create a virtual Python environment
 
-## Nutzung
-### GUI starten
+## Usage
+### Start GUI
 ```bash
 python gui.py
 ```
 
-### Konsolenmodus
+### Command-line mode
 ```bash
 python main.py
 ```
 
-## Beispiel-Auswertung
-- Das System entscheidet 210 moralische Konflikte.
-- 203 Konflikte werden durch Prioritäten gelöst.
-- Die häufigsten "Sieger" sind: Nachhaltigkeit, Menschlichkeit, öffentliche Gesundheit.
+## Example Evaluation
+- The system resolves 210 moral conflicts.
+- 203 conflicts are resolved by priorities.
+- The most frequent "winners" are: sustainability, humanity, public health.
 
-## Anpassung & Erweiterung
-- Neue Szenarien: In `facts.lp` ergänzen
-- Neue Regeln: In `rules.lp` ergänzen
-- Prioritäten anpassen: In `facts.lp` pro Kontext ändern
+## Customization & Extension
+- New scenarios: Add to `facts.lp`
+- New rules: Add to `rules.lp`
+- Adjust priorities: Change per context in `facts.lp`
 
-## Lizenz
+## License
 MIT License
 
 ---
 
-**Kontakt:** Für Fragen oder Anregungen: [Dein Name oder Kontakt]
+**Contact:** For questions or suggestions: [Your Name or Contact]
