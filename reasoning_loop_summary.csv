@@ -1,0 +1,10 @@
+metric,value
+total_rows,50
+audited_rows,50
+supports_atom_true,50
+drift_detected_true,0
+supports_rate,100.0%
+drift_rate,0.0%
+moral_status_sound,50
+moral_status_questionable,0
+moral_status_unsound,0

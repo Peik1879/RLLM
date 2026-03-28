@@ -1,0 +1,41 @@
+"""
+Collect responses from LLM for moral scenarios.
+"""
+
+import json
+import os
+from pathlib import Path
+
+
+def load_scenarios(scenarios_path: str) -> list:
+    """Load scenarios from JSONL file."""
+    scenarios = []
+    with open(scenarios_path, 'r') as f:
+        for line in f:
+            scenarios.append(json.loads(line))
+    return scenarios
+
+
+def collect_responses(scenarios: list) -> list:
+    """Collect LLM responses for each scenario."""
+    # TODO: Implement LLM API calls
+    pass
+
+
+def save_responses(responses: list, output_path: str) -> None:
+    """Save responses to JSONL file."""
+    with open(output_path, 'w') as f:
+        for response in responses:
+            f.write(json.dumps(response) + '\n')
+
+
+def main():
+    """Main execution function."""
+    data_dir = Path(__file__).parent.parent / 'data'
+    scenarios = load_scenarios(data_dir / 'scenarios.jsonl')
+    responses = collect_responses(scenarios)
+    save_responses(responses, data_dir / 'responses_raw.jsonl')
+
+
+if __name__ == '__main__':
+    main()

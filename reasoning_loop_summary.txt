@@ -1,0 +1,24 @@
+============================================================
+REASONING LOOP SUMMARY
+============================================================
+
+Total rows: 50
+Audited rows: 50
+Supports atom (true): 50 (100.0%)
+Drift detected (true): 0 (0.0%)
+
+Moral status counts
+-------------------
+sound: 50
+questionable: 0
+unsound: 0
+
+Top issue tags
+--------------
+none
+
+Outputs
+-------
+Summary CSV: reasoning_loop_summary.csv
+Group CSV:   reasoning_loop_groups.csv
+============================================================

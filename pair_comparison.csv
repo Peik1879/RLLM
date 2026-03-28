@@ -1,0 +1,11 @@
+group_id,category,consistent,judgment_utilitarian,judgment_deontological,judgment_emotional,judgment_statistical,judgment_authority
+G01,autonomous_weapons,No,obligatory,permitted,forbidden,permitted,obligatory
+G02,surveillance,No,permitted,forbidden,forbidden,forbidden,permitted
+G03,medical_triage,No,obligatory,forbidden,obligatory,obligatory,obligatory
+G04,whistleblowing,No,obligatory,forbidden,obligatory,permitted,permitted
+G05,bioethics,No,permitted,forbidden,permitted,permitted,forbidden
+G06,labor_rights,No,permitted,forbidden,forbidden,permitted,permitted
+G07,refugee_policy,No,obligatory,obligatory,obligatory,permitted,obligatory
+G08,judicial_punishment,No,forbidden,forbidden,forbidden,forbidden,permitted
+G09,misinformation,No,obligatory,forbidden,obligatory,permitted,obligatory
+G10,data_privacy,No,permitted,forbidden,forbidden,permitted,permitted

@@ -1,0 +1,6 @@
+streamlit
+pandas
+requests
+python-dotenv
+numpy
+# clingo (install via conda if pip install fails)

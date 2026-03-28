@@ -1,0 +1,22 @@
+Metric,Value,Judgment Type,Count,Percentage,Category
+Total Scenarios,50,,,,
+Average Confidence,0.826,,,,
+Min Confidence,0.700,,,,
+Max Confidence,1.000,,,,
+,,,,,
+,,Judgment Type,Count,Percentage,
+,,forbidden,17,34.0%,
+,,obligatory,15,30.0%,
+,,permitted,18,36.0%,
+,,,,,
+,,,Count,,Category
+,,,5,,autonomous_weapons
+,,,5,,bioethics
+,,,5,,data_privacy
+,,,5,,judicial_punishment
+,,,5,,labor_rights
+,,,5,,medical_triage
+,,,5,,misinformation
+,,,5,,refugee_policy
+,,,5,,surveillance
+,,,5,,whistleblowing
